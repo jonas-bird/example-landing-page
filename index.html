@@ -7,70 +7,99 @@
     <title>A Landing Page</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./style.css" type="text/css" media="screen" />
+
 
 </head>
 
 <body>
-       <nav>
-        <div id="headerLogoDiv">
-<img alt="header logo" />
-        </div>
-        <div id="headerLinks">
-            <a>header link one</a>
-            <a>header link two</a>
-            <a>header link three</a>
-        </div>
-    </nav>
-    <div>
-        <div>
-        <h1>This website is awesome</h1>
-        <p>This is some text that goes under the title. It is in a smaller font and the color is lower contrast</p>
-        <button>Sign up</button>
-        </div>
-        <img alt="this is a placeholder for an image" />
-    </div>
-    <div id="information">
-        <h2>Some random information.</h2>
-        <div>
-            <figure>
-                <img />
-                <figcaption>
-                    This is some subtext under an illustration ot image
-                </figcaption>
-            </figure>
-            <figure>
-                <img />
-                <figcaption>
-                    This is some subtext under an illustration ot image
-                </figcaption>
-            </figure>
-            <figure>
-                <img />
-                <figcaption>
-                     This is some subtext under an illustration ot image
-               </figcaption>
-            </figure>
-            <figure>
-                <img />
-                <figcaption>
-                     This is some subtext under an illustration ot image
-               </figcaption>
-            </figure>
+       <nav class="navbar">
+           <div class="container">
+            <div class="logo">
+                <a href="index.html">Header Logo</a>
+            </div>
+            <div class="menu-links">
+                <ul id="navigation">
+                    <li><a href="#">header link one</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="https://jonasbird.tech">jonasbird.tech</a></li>
+                </ul>
+            </div>
+           </div>
+        </nav>
 
-               </div>
+<!--- Hero -->
+<section class="hero">
+    
+    <div class="container">
+        <div class="hero-content">
+            <h1 class="text-xl">
+                This website is awesome
+            </h1>
+            <p>
+                This website has some subtext that goes here under the main title. It's smaller font and the color is lower contrast
+            </p>
+            <button class="btn">Sign Up</button>
+        </div>
+        <div class="hero-image">
+            <img src="images/hero-image.jpg" alt="nothing to see here">
+        </div>
+    </div>
+</section>
+
+<!---Info Section-->
+<section class="info">
+    <h2 class="info-heading text-large" >Some random information.</h2>
+<div class="container">
+    
+    <div class="info-main">
+        <figure>
+            <img src="images/nobody.jpg" alt="nobody likes you" />
+            <figcaption>This is some subtext under an illustration or image</figcaption>
+        </figure>
+        <figure>
+            <img src="images/nobody.jpg" alt="nobody likes you" />
+            <figcaption>This is some subtext under an illustration or image</figcaption>
+        </figure>
+        <figure>
+            <img src="images/nobody.jpg" alt="nobody likes you" />
+            <figcaption>This is some subtext under an illustration or image</figcaption>
+        </figure>
+        <figure>
+            <img src="images/nobody.jpg" alt="nobody likes you" />
+            <figcaption>This is some subtext under an illustration or image</figcaption>
+        </figure>
+    </div>
+</div>
+</section>
+<section class="testimonial">
+    <div class="container">
     <div>
-        <p><em>This is an inspiring quote, or a testimonial from a customer. Maybe it's just filling up space, or maybe people will actually read it. Who knows? All I know is that it looks nice.</em>
+        <p class="testimonial-text">This is an inspiring quote, or a testimonial from a customer. Maybe it's just filling up space, or maybe people will actually read it. Who knows? All I know is that it looks nice.</p>
+        <h4>-Thor, God of Thunder</h4>
+</div>
+    </div>
+
+</section>
+
+<!---Action-->
+<section class="action">
+    <div class="container">
+        <div class="action-box">
+        <div class="call-action-txt">
+        <p>
+            <h4 class="action-heading">
+                Call to action! It's time!
+            </h4>
+            Sign upfor our product by clicking that button right over there
         </p>
-        <p><strong>-Thor, God of Thunder</strong></p>
-        <div id="action">
-            <h3>Call to action! It's time!</h3>
-            <p>Sign upfor our product by clicking that button right over there</p>
-            <button>Sign up</button>
+        </div>
+        <button class="btn">Sign Up</button>
         </div>
     </div>
-    <footer>
-        <p>Copyright © The Odin Project 2021</p>
-    </footer>
-</body>
+</section>
 
-</html>
+<!---footer-->
+<footer>
+    <p class="footer-txt"> Copyright © The Odin Project 2021</p>
+</footer>
